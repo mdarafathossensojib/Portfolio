@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+        <div class="row w-100 align-items-center">
+            <div class="col-6 col-lg-3">
+            <a class="navbar-brand" href="#">
+                <img src="Portfolio-Site-main/icons/logo1.png" alt="logo" class="nav-logo">
+            </a>
+            </div>
+
+            <div class="col-6 text-end d-lg-none">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+
+            <div class="col-12 col-lg-9">
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center text-lg-end">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#">About</a>
+                <button class="resume"><a href="portfolio.pdf" download="Arafat_Portfolio.pdf" type="application/pdf">Resume <i class="fa-solid fa-download"></i></a></button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    </header>
+
+    <section class="banner-page">
+        <div class="container py-5">
+            <div class="row align-items-center">
+
+                <!-- Left side text part -->
+                <div class="col-12 col-md-8 text-white">
+                <h1 class="fw-bold text-info">HI !</h1>
+                <h1 class="fw-bold text-info">I'M ARAFAT HOSSEN</h1>
+                <h5>Web Developer || React Developer || Programmer</h5>
+                <p class="mt-3">
+                    I am an enthusiastic JavaScript developer with knowing some framework for 
+                    the frontend and the backend. I know Basic PHP and MySQL but basically a MERN developer.
+                </p>
+                <div class="mt-4">
+                    <a class="banner-icon social-link" href="#"><i class="fab fa-github fa-lg  me-3"></i></a>
+                    <a class="banner-icon social-link" href="#"><i class="fab fa-linkedin fa-lg me-3"></i></a>
+                    <a class="banner-icon social-link" href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                    <button class="resume"><a href="portfolio.pdf" download="Arafat_Portfolio.pdf" type="application/pdf">Resume <i class="fa-solid fa-download"></i></a></button>
+                </div>
+                </div>
+
+                <!-- Right side image part -->
+                <div class="col-12 col-md-4 text-center mt-4 mt-md-0">
+                <img src="Portfolio-Site-main/images/arafat.jpg" alt="profile" class="img-fluid rounded shadow">
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4 text-white fw-bold">Projects</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12 project-card d-flex flex-column flex-md-row bg-dark text-white p-3 rounded shadow">
+            
+            <!-- 🔹 Image Slider -->
+            <div id="projectCarousel" class="carousel slide col-md-6" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <div class="placeholder d-flex justify-content-center align-items-center">
+                    <img src="Portfolio-Site-main/projects-img/travel-guru-map.png" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="placeholder d-flex justify-content-center align-items-center">
+                    <img src="Portfolio-Site-main/projects-img/Travel-Search.png" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- 🔹 Project Description -->
+            <div class="col-md-6 ps-md-4 mt-3 mt-md-0">
+                <h4 class="fw-bold text-info">Travel Explorer <i class="fa-solid fa-earth-americas"></i> <i class="fa-solid fa-plane"></i></h4>
+                <p>This is a travel booking website where users can explore destinations, book hotels, and share experiences.</p>
+                <ul>
+                <li>Responsive design with Bootstrap.</li>
+                <li>Integrated image carousel for gallery.</li>
+                <li>Built using HTML, CSS, and JavaScript.</li>
+                </ul>
+                <div class="tech-stack mt-2">
+                <span class="badge bg-primary">HTML</span>
+                <span class="badge bg-success">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-10 col-md-12 project-card d-flex flex-column flex-md-row bg-dark text-white p-3 rounded shadow">
+            
+            <!-- 🔹 Image Slider -->
+            <div id="projectCarousel" class="carousel slide col-md-6" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <div class="placeholder d-flex justify-content-center align-items-center">
+                    <img src="Portfolio-Site-main/projects-img/Travel-Search.png" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="placeholder d-flex justify-content-center align-items-center">
+                    <img src="Portfolio-Site-main/projects-img/travel-guru-map.png" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- 🔹 Project Description -->
+            <div class="col-md-6 ps-md-4 mt-3 mt-md-0">
+                <h4 class="fw-bold text-info">Restaurent Managment System <i class="fa-solid fa-utensils"></i></h4>
+                <p>This is a Restaurent Managment website where users can Order food, pay-bills, and Admin can add food etc.</p>
+                <ul>
+                <li>Responsive design with Bootstrap.</li>
+                <li>Integrated image carousel for gallery.</li>
+                <li>Built using HTML, CSS, JavaScript and Django.</li>
+                </ul>
+                <div class="tech-stack mt-2">
+                <span class="badge bg-primary">HTML</span>
+                <span class="badge bg-success">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-danger">Django</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-page">
+        <div class="container py-5">
+            <div class="row align-items-center">
+
+                <!-- Left side text part -->
+                <div class="col-12 col-md-6 text-white">
+                    <h3>Expertise:</h3>
+                    <div class="mt-3">
+                        <span class="badge bg-light-gray">React.js</span>
+                        <span class="badge bg-light-gray">Javascript</span>
+                        <span class="badge bg-light-gray">Node.js</span>
+                        <span class="badge bg-light-gray">Firebase</span> <br>
+                        <span class="badge bg-light-gray">Express.js</span>
+                        <span class="badge bg-light-gray">HTML</span>
+                        <span class="badge bg-light-gray">Bootstrap</span>
+                        <span class="badge bg-light-gray">MongoDB</span>
+                    </div>
+
+                    <h3 class="mt-3">Comfortable:</h3>
+                    <div class="mt-3">
+                        <span class="badge bg-light-gray">SQL</span>
+                        <span class="badge bg-light-gray">Redux</span>
+                        <span class="badge bg-light-gray">Socket.io</span>
+                        <span class="badge bg-light-gray">AWS</span> <br>
+                        <span class="badge bg-light-gray">Docker</span>
+                        <span class="badge bg-light-gray">TypeScript</span>
+                        <span class="badge bg-light-gray">Next.js</span>
+                    </div>
+
+                    <h3 class="mt-3">Familiar:</h3>
+                    <div class="mt-3">
+                        <span class="badge bg-light-gray">C++</span>
+                        <span class="badge bg-light-gray">Python</span>
+                        <span class="badge bg-light-gray">Spring Boot</span>
+                        <span class="badge bg-light-gray">Networking</span>
+                    </div>
+
+                    <h3 class="mt-3">Tools:</h3>
+                    <div class="mt-3">
+                        <span class="badge bg-light-gray">VS Code</span>
+                        <span class="badge bg-light-gray">Jira</span>
+                        <span class="badge bg-light-gray">Trello</span>
+                        <span class="badge bg-light-gray">Git</span>
+                    </div>
+                </div>
+
+                <!-- Right side image part -->
+                <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
+                    <h4 class="mt-5 fw-bold text-info edu">My Education</h4>
+                    <p class="mt-3 mb-0 fw-bold">B.Sc in Chemistry</p>
+                    <p class="fw-bold mb-0">Bangladesh National University</p>
+                    <p class="mt-0">2018-2022</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="d-flex justify-content-center align-items-center vh-100 mb-5">
+        <div class="contact-box p-4 rounded">
+            <h2 class="text-center mb-4 text-info fw-bold">Contact Us</h2>
+            <form>
+            <div class="mb-3">
+                <label for="name" class="form-label text-white text-weight">Your Name</label>
+                <input type="text" class="form-control bg-dark text-white border-0" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-white text-weight">Your Email</label>
+                <input type="email" class="form-control bg-dark text-white border-0" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label text-white text-weight">Description</label>
+                <textarea class="form-control bg-dark text-white border-0" id="message" rows="4" placeholder="Type your message..."></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-info fw-bold px-4">Send</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="d-flex justify-content-center align-items-center main-footer">
+        <div class="container footer-text">
+            <p>Copyright &copy; 2025 | Arafat Hossen <br> Rajshahi, Bangladesh</p>
+            <a class="banner-icon social-link" href="#"><i class="fab fa-github fa-lg  me-3"></i></a>
+            <a class="banner-icon social-link" href="#"><i class="fab fa-linkedin fa-lg me-3"></i></a>
+            <a class="banner-icon social-link" href="#"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
